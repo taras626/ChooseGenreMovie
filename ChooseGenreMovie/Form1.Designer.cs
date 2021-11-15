@@ -31,14 +31,15 @@ namespace ChooseGenreMovie
         {
             this.p_MainMenu = new System.Windows.Forms.Panel();
             this.p_Test = new System.Windows.Forms.Panel();
+            this.gb_Desc = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.p_Result = new System.Windows.Forms.Panel();
             this.b_End = new System.Windows.Forms.Button();
             this.l_Result = new System.Windows.Forms.Label();
             this.l_TextOfQuestion = new System.Windows.Forms.Label();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.b_Further = new System.Windows.Forms.Button();
             this.b_Exit = new System.Windows.Forms.Button();
             this.b_Back = new System.Windows.Forms.Button();
@@ -47,11 +48,11 @@ namespace ChooseGenreMovie
             this.b_Test = new System.Windows.Forms.Button();
             this.l_Title = new System.Windows.Forms.Label();
             this.l_Desc = new System.Windows.Forms.Label();
-            this.gb_Desc = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.p_MainMenu.SuspendLayout();
             this.p_Test.SuspendLayout();
-            this.p_Result.SuspendLayout();
             this.gb_Desc.SuspendLayout();
+            this.p_Result.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_MainMenu
@@ -66,7 +67,7 @@ namespace ChooseGenreMovie
             this.p_MainMenu.Controls.Add(this.l_Title);
             this.p_MainMenu.Controls.Add(this.l_Desc);
             this.p_MainMenu.Location = new System.Drawing.Point(17, 15);
-            this.p_MainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.p_MainMenu.Margin = new System.Windows.Forms.Padding(4);
             this.p_MainMenu.Name = "p_MainMenu";
             this.p_MainMenu.Size = new System.Drawing.Size(856, 521);
             this.p_MainMenu.TabIndex = 0;
@@ -84,18 +85,96 @@ namespace ChooseGenreMovie
             this.p_Test.Controls.Add(this.b_Back);
             this.p_Test.Controls.Add(this.l_Question);
             this.p_Test.Location = new System.Drawing.Point(0, 0);
-            this.p_Test.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.p_Test.Margin = new System.Windows.Forms.Padding(4);
             this.p_Test.Name = "p_Test";
             this.p_Test.Size = new System.Drawing.Size(856, 521);
             this.p_Test.TabIndex = 1;
             this.p_Test.Visible = false;
+            // 
+            // gb_Desc
+            // 
+            this.gb_Desc.Controls.Add(this.radioButton5);
+            this.gb_Desc.Controls.Add(this.radioButton1);
+            this.gb_Desc.Controls.Add(this.radioButton2);
+            this.gb_Desc.Controls.Add(this.radioButton3);
+            this.gb_Desc.Controls.Add(this.radioButton4);
+            this.gb_Desc.Location = new System.Drawing.Point(25, 162);
+            this.gb_Desc.Name = "gb_Desc";
+            this.gb_Desc.Size = new System.Drawing.Size(804, 304);
+            this.gb_Desc.TabIndex = 10;
+            this.gb_Desc.TabStop = false;
+            this.gb_Desc.Text = "Описание";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton1.Location = new System.Drawing.Point(37, 56);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(160, 31);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton2.Location = new System.Drawing.Point(37, 95);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(160, 31);
+            this.radioButton2.TabIndex = 5;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton3.Location = new System.Drawing.Point(37, 134);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(160, 31);
+            this.radioButton3.TabIndex = 6;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton4.Location = new System.Drawing.Point(37, 173);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(160, 31);
+            this.radioButton4.TabIndex = 7;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // p_Result
             // 
             this.p_Result.Controls.Add(this.b_End);
             this.p_Result.Controls.Add(this.l_Result);
             this.p_Result.Location = new System.Drawing.Point(0, 0);
-            this.p_Result.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.p_Result.Margin = new System.Windows.Forms.Padding(4);
             this.p_Result.Name = "p_Result";
             this.p_Result.Size = new System.Drawing.Size(856, 522);
             this.p_Result.TabIndex = 9;
@@ -105,7 +184,7 @@ namespace ChooseGenreMovie
             // 
             this.b_End.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.b_End.Location = new System.Drawing.Point(729, 474);
-            this.b_End.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.b_End.Margin = new System.Windows.Forms.Padding(4);
             this.b_End.Name = "b_End";
             this.b_End.Size = new System.Drawing.Size(100, 28);
             this.b_End.TabIndex = 1;
@@ -138,75 +217,11 @@ namespace ChooseGenreMovie
             this.l_TextOfQuestion.Size = new System.Drawing.Size(0, 27);
             this.l_TextOfQuestion.TabIndex = 8;
             // 
-            // radioButton4
-            // 
-            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(37, 173);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(160, 31);
-            this.radioButton4.TabIndex = 7;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(37, 134);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(160, 31);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(37, 95);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(160, 31);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(37, 56);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(160, 31);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // b_Further
             // 
             this.b_Further.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.b_Further.Location = new System.Drawing.Point(621, 473);
-            this.b_Further.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.b_Further.Margin = new System.Windows.Forms.Padding(4);
             this.b_Further.Name = "b_Further";
             this.b_Further.Size = new System.Drawing.Size(100, 28);
             this.b_Further.TabIndex = 3;
@@ -218,7 +233,7 @@ namespace ChooseGenreMovie
             // 
             this.b_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.b_Exit.Location = new System.Drawing.Point(729, 473);
-            this.b_Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.b_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.b_Exit.Name = "b_Exit";
             this.b_Exit.Size = new System.Drawing.Size(100, 28);
             this.b_Exit.TabIndex = 2;
@@ -230,7 +245,7 @@ namespace ChooseGenreMovie
             // 
             this.b_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.b_Back.Location = new System.Drawing.Point(25, 473);
-            this.b_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.b_Back.Margin = new System.Windows.Forms.Padding(4);
             this.b_Back.Name = "b_Back";
             this.b_Back.Size = new System.Drawing.Size(100, 28);
             this.b_Back.TabIndex = 1;
@@ -256,7 +271,7 @@ namespace ChooseGenreMovie
             // 
             this.b_Settings.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.b_Settings.Location = new System.Drawing.Point(233, 293);
-            this.b_Settings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.b_Settings.Margin = new System.Windows.Forms.Padding(4);
             this.b_Settings.Name = "b_Settings";
             this.b_Settings.Size = new System.Drawing.Size(387, 86);
             this.b_Settings.TabIndex = 3;
@@ -268,7 +283,7 @@ namespace ChooseGenreMovie
             // 
             this.b_Test.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.b_Test.Location = new System.Drawing.Point(233, 199);
-            this.b_Test.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.b_Test.Margin = new System.Windows.Forms.Padding(4);
             this.b_Test.Name = "b_Test";
             this.b_Test.Size = new System.Drawing.Size(387, 86);
             this.b_Test.TabIndex = 2;
@@ -299,18 +314,17 @@ namespace ChooseGenreMovie
             this.l_Desc.TabIndex = 4;
             this.l_Desc.Text = "fdklsag";
             // 
-            // gb_Desc
+            // radioButton5
             // 
-            this.gb_Desc.Controls.Add(this.radioButton1);
-            this.gb_Desc.Controls.Add(this.radioButton2);
-            this.gb_Desc.Controls.Add(this.radioButton3);
-            this.gb_Desc.Controls.Add(this.radioButton4);
-            this.gb_Desc.Location = new System.Drawing.Point(25, 162);
-            this.gb_Desc.Name = "gb_Desc";
-            this.gb_Desc.Size = new System.Drawing.Size(804, 304);
-            this.gb_Desc.TabIndex = 10;
-            this.gb_Desc.TabStop = false;
-            this.gb_Desc.Text = "Описание";
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton5.Location = new System.Drawing.Point(37, 212);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(160, 31);
+            this.radioButton5.TabIndex = 8;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "radioButton5";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -319,7 +333,7 @@ namespace ChooseGenreMovie
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(889, 550);
             this.Controls.Add(this.p_MainMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Программа";
@@ -328,10 +342,10 @@ namespace ChooseGenreMovie
             this.p_MainMenu.PerformLayout();
             this.p_Test.ResumeLayout(false);
             this.p_Test.PerformLayout();
-            this.p_Result.ResumeLayout(false);
-            this.p_Result.PerformLayout();
             this.gb_Desc.ResumeLayout(false);
             this.gb_Desc.PerformLayout();
+            this.p_Result.ResumeLayout(false);
+            this.p_Result.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -357,6 +371,7 @@ namespace ChooseGenreMovie
         private System.Windows.Forms.Button b_End;
         private System.Windows.Forms.Label l_Result;
         private System.Windows.Forms.GroupBox gb_Desc;
+        private System.Windows.Forms.RadioButton radioButton5;
     }
 }
 

@@ -9,12 +9,14 @@ namespace ChooseGenreMovie
     class CController
     {
         private CModel model;
-        public Dictionary<string, List<string>> questions;
-        public string desc;
+        public Dictionary<string, List<string>> Questions { get { return model.questions; } private set { value = model.questions; } }
+        public string Desc { get { return model.desc; } private set { value = model.desc; } }
+        public int[] Result { get { return model.result; } set { value = model.result; } }
 
         public CController()
         {
             model = new CModel();
+            Result = model.result;
         }
 
         /// <summary>
@@ -23,7 +25,6 @@ namespace ChooseGenreMovie
         public void OpenTest() 
         {
             model.OpenTest();
-            UpdateData();
         }
 
         public void GetQuestion(int idx, out string question, out string[] answers)
@@ -36,10 +37,9 @@ namespace ChooseGenreMovie
             return model.GetResult();
         }
 
-        private void UpdateData() 
+        public void Reset() 
         {
-            questions = model.questions;
-            desc = model.desc;
+            model.Reset();
         }
     }
 }

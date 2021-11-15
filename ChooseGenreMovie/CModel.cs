@@ -10,8 +10,10 @@ namespace ChooseGenreMovie
     {
         private string filePathForGenre = "C:\\Users\\user\\Desktop\\Проекты\\ChooseGenreMovie\\genres.txt";
 
-        public Dictionary<string, List<string>> questions;
         public Dictionary<string, int> genre;
+        public Dictionary<string, List<string>> questions;
+        public int[] result;
+
         public string desc;
 
         public CModel()
@@ -27,11 +29,15 @@ namespace ChooseGenreMovie
                 using (StreamReader reader = new StreamReader(filePathForGenre))
                 {
                     string line = reader.ReadLine();
+                    int id = -1;
                     while (line != null)
                     {
-                        genre.Add(line, 0);
+                        id = (int) Char.GetNumericValue(line[line.Length-1]);
+                        line = line.Substring(0, line.Length - 1);
+                        genre.Add(line, id);
                         line = reader.ReadLine();
                     }
+                    result = new int[genre.Count];
                     return genre;
                 }
             }
@@ -46,10 +52,20 @@ namespace ChooseGenreMovie
         public string GetResult() 
         {
             int max = 0;
-            foreach (KeyValuePair<string, int> p in genre)
-                if (p.Value > max)
-                    max = p.Value;
-            return genre.FirstOrDefault(x => x.Value.Equals(max)).Key;
+            int idMax = -1;
+            for (int i = 0; i < result.Length; i++) 
+            {
+                if (max < result[i]) 
+                {
+                    max = result[i];
+                    idMax = i;
+                }
+                else if (max == result[i]) 
+                {
+                    //TO DO: Сделать рандомныую выдачу при одинаковом кол-ве баллов разных жанров
+                }
+            }
+            return genre.Where(x => x.Value == idMax).FirstOrDefault().Key;
         }
 
         public void OpenTest() 
@@ -85,11 +101,9 @@ namespace ChooseGenreMovie
                                 int countOfQ = Convert.ToInt32(line.Substring(line.Length - 1));
                                 question = line.Substring(0, line.Length - 1);
                                 answers = new List<string>();
-
                                 for (int i = 0; i < countOfQ; i++)
-                                {
                                     answers.Add(reader.ReadLine());
-                                }
+                                
                                 questions.Add(question, answers);
                             }
 
@@ -105,6 +119,11 @@ namespace ChooseGenreMovie
             var item = questions.ElementAt(idx);
             question = item.Key;
             answers = item.Value.ToArray();
+        }
+
+        public void Reset() 
+        {
+            result = new int[genre.Count];
         }
     }
 }
